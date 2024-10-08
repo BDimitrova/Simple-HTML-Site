@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body{
+   font-family: Montserrat, sans-serif;
+   font-size: 18px;
+   background-color: #F6E0B5;
+}
+
+.container{
+   height: 30;
+   width: 60rem;
+   margin: 5rem auto;
+   display: flex;
+   justify-content: center;
+}
+
+.col-1,
+.col-2,
+.col-3{
+   flex: 1 0 1rem;
+}
+
+.card{
+   height: 12rem;
+   width: 20rem;
+   display: flex;
+   flex-direction: column;
+   border: 1px solid black;
+   border-radius: 1rem;
+   overflow: hidden;
+   margin: 1rem;
+   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.img-placeholder{
+   flex: 6 0 1rem;
+   position: relative;
+   overflow: hidden; 
+}
+
+.img-placeholder img{
+   position: absolute;
+   top:50%; left:50%;
+   transform: translate(-50%, -50%);
+   height: 100%;
+   width: 350px;
+
+}
+
+.card-title{
+   flex: 1 0 1rem;
+   display: flex;
+   align-items: center;
+   padding-left: 0.3em;
+   color: white;
+   font-weight: bold;
+   background-color: #66545e;
+}
+
+.list-places{
+   margin: 1rem;
+}
+
+.list-places ul{
+   list-style: none inside;
+}
+
+.list-places li{
+   padding: 0.3em 0;
+}
+
+.list-places li i{
+   padding-right: 0.5em;
+}
+
+.list-places span{
+   display: inline-block;
+   padding: 0.4em 0 0.8em 0;
+   font-weight: bold;
+   color: #66545e;
+}
+
+.list-places ul a{
+   text-decoration: none;
+   font-weight: bold;
+   color: 	#66545e;
+}
